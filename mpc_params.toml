@@ -1,0 +1,32 @@
+num_pos_constr = 10
+
+[weights]
+joint_pos = 1e-3
+qdot = 1e-5
+qddot = 1e-4
+swing_pose = 5e2
+torso_orient = 1e-2
+zmp_pos = 0.0 #100.0
+feas_pos = 0.5
+CoM_height = 1.0
+avrg_ang_vel = [1e-4, 1e-4, 1.0]
+L_dot = [0.0, 0.0, 0.0]
+footstep = 0.0
+double_support = 0.0
+# CHEST PITCH, CHEST YAW, 
+# (L) SHOULDER PITCH, (L) SHOULDER ROLL, (L) ELBOW PITCH, 
+# (R) SHOULDER PITCH, (R) SHOULDER ROLL, (R) ELBOW PITCH,
+# (L) HIP YAW, (R) HIP YAW
+joint_regulation = [20, 5, 10, 50, 5, 10, 50, 5, 5, 5]
+
+#[gains]
+#CoM_height = 0.5
+#torso_orient = [0.5, 5.0, 1.0]
+#swing_position = [1.0, 1.0, 5.0]
+#swing_orient = [5.0, 5.0, 5.0]
+
+
+#CoM_height = 0.5
+#torso_orient = [0.5, 0.5, 2.0]
+#swing_position = [10.0, 10.0, 10.0]
+#swing_orient = [5.0, 5.0, 5.0]

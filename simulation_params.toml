@@ -1,0 +1,28 @@
+models_path = "urdf"
+
+vel = [0.2, 0.0, 0.0]
+num_steps = 15
+swing_height = 0.06
+
+singleSupportDuration = 0.7
+doubleSupportDuration = 0.3
+
+comTargetHeight = 0.77
+
+ell = 0.203276
+coronalDeviationMax = 0.05
+sagittalDeviationMax = 0.5
+
+
+[push]
+duration = 10 # Steps
+timing = 300 # Steps
+magnitude = -0 # Newton (int)
+angle = 90 # Degrees (int)
+
+
+[kalman]
+cov_meas_pos = 1e0
+cov_meas_vel = 1e1
+cov_mod_pos = 1e-1
+cov_mod_vel = 1e0
